@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #1C1C1C; /* Preto carvão */
+  color: #FFFFFF; /* Texto branco */
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: #2F4F4F; /* Cinza ardósia escuro */
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #FFD700; /* Dourado para dar destaque */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+nav ul li a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #B22222; /* Vermelho escuro */
+  color: #FFFFFF;
+}
+
+main {
+  flex: 1;
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.banner {
+  position: relative;
+  height: 300px; /* altura do banner */
+  background-image: url('../imagens/homem-bonito-na-barbearia-barbeando-barba.jpg'); /* caminho da imagem */
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+  border-radius: 8px;
+  margin-bottom: 40px;
+}
+
+.banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(28, 28, 28, 0.6); /* camada escura para contraste */
+  border-radius: 8px;
+  z-index: 1;
+}
+
+.banner .banner-image {
+  position: relative;
+  z-index: 2;
+}
+
+.banner h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #FFD700; /* dourado */
+}
+
+.banner p {
+  font-size: 1.3rem;
+  color: #fff;
+}
+
+
+.servicos-destaque {
+  background-color: #333333; /* Cinza escuro */
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.servicos-destaque h2 {
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 15px;
+  color: #FFD700;
+}
+
+.servicos-destaque ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.servicos-destaque ul li {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+footer {
+  background-color: #2F4F4F;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9rem;
+  color: #C0C0C0;
+}
+
+.ativo {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.conteudo {
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.historia {
+  margin-bottom: 15px;
+}
+
+.barbearia{
+  margin-bottom: 15px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #a38b73; /* cor de fundo única */
+}
+
+table th, table td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ccc;
+}
+
+table th {
+  background-color: #3e2f25; /* cor escura para cabeçalho */
+  color: #fff;
+}
+
+
+
+.servicos {
+  margin-bottom: 15px;
+}
+
+.passo-a-passo {
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+ol {
+  list-style-position: inside;
+  text-align: left;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.precos {
+  margin-bottom: 15px;
+}
