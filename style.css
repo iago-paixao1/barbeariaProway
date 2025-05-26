@@ -54,7 +54,7 @@ h2, h3 {
     margin-bottom: 15px;
 }
 
-.galeria-container {
+.galeria-container , .equipe-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 15px;
@@ -126,4 +126,15 @@ footer {
     display: block;
     width: 200px;
     margin: 10px auto;
+}
+table,tr, td {
+    padding: 10px;
+    text-align: center;
+    border: #111010 solid 1px;
+    padding: 10px;
+
+}
+.tabela {
+    background-color: #333;
+    color: #fff;
 }
