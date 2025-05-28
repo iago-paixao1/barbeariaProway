@@ -198,3 +198,414 @@ ol {
 .precos {
   margin-bottom: 15px;
 }
+
+.galeria {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #f4f4f4;
+}
+
+.fotos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.galeria h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #2B2D42; /* cor escura da paleta */
+}
+
+.fotos img {
+  width: 300px;
+  height: 200px;
+  object-fit: contain; /* mostra a imagem inteira */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  background-color: #fff; /* para não ficar fundo transparente */
+  padding: 5px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.fotos img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.corte {
+  text-align: center;
+  width: 300px;
+}
+
+.corte p {
+  margin-top: 8px;
+  font-size: 1rem;
+  color: #2B2D42; /* mesma cor escura da paleta */
+  font-weight: 500;
+}
+
+/* CONTATO */
+
+.contato-container {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #2F4F4F; /* Cinza ardósia escuro, igual ao header */
+  padding: 30px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  color: #FFFFFF;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.contato-container h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #FFD700; /* dourado */
+  text-align: center;
+}
+
+.contato-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contato-container label {
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 6px;
+  color: #FFD700;
+}
+
+.contato-container input[type="text"],
+.contato-container input[type="email"],
+.contato-container input[type="password"],
+.contato-container select,
+.contato-container textarea {
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #a38b73; /* cor de fundo suave da paleta */
+  color: #1C1C1C; /* texto escuro para contraste */
+  resize: vertical;
+}
+
+.contato-container textarea {
+  min-height: 80px;
+}
+
+.contato-container input[type="checkbox"],
+.contato-container input[type="radio"] {
+  margin-right: 8px;
+  accent-color: #FFD700; /* dourado para checkbox e radio */
+  cursor: pointer;
+}
+
+.contato-container .form-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.contato-container .botoes {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.contato-container button {
+  cursor: pointer;
+  background-color: #FFD700;
+  color: #1C1C1C;
+  border: none;
+  padding: 12px 25px;
+  font-weight: 700;
+  font-size: 1rem;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.contato-container button:hover {
+  background-color: #b28a00; /* dourado mais escuro */
+
+}
+
+.formulario-contato {
+  background-color: #333333;
+  padding: 20px;
+  border-radius: 8px;
+  color: #fff;
+  max-width: 800px;
+  margin: 0 auto 40px auto;
+}
+
+.formulario-contato h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #FFD700; /* Dourado */
+  text-align: center;
+}
+
+.formulario-contato form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.form-linha {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.form-linha .form-group {
+  flex: 1;
+  min-width: 0;
+  width: 100%;
+}
+
+
+button[type="submit"] {
+  background-color: #B22222; /* Vermelho escuro */
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-self: flex-start;
+}
+
+button[type="submit"]:hover {
+  background-color: #8B1A1A;
+}
+
+.linha-horizontal {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.linha-horizontal label {
+  margin-bottom: 0;
+  white-space: nowrap;
+}
+
+.linha-horizontal select {
+  flex: 1;
+  min-width: 200px;
+  padding: 10px;
+  border-radius: 4px;
+  border: none;
+  font-size: 1rem;
+}
+
+.promocoes {
+  padding: 15px;
+}
+
+textarea {
+  width: 100%;
+  min-height: 150px; /* altura maior */
+  resize: vertical; /* permite ao usuário redimensionar verticalmente */
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: none;
+  margin-top: 5px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.form-group input[type="email"],
+.form-group input[type="password"] {
+  min-width: 250px; /* ou 100% se preferir ocupar a largura toda */
+  font-size: 1rem;
+}
+.form-group input::placeholder {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.form-group input[type="email"],
+.form-group input[type="password"] {
+  width: 100%;
+  min-width: 0;
+  font-size: 1rem;
+  padding: 12px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+  .contato-container {
+    padding: 20px 15px;
+  }
+
+  .contato-container button {
+    flex: 1;
+  }
+}
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+
+  nav ul li a {
+    font-size: 1.3rem;
+    padding: 10px 15px;
+    display: block;
+  }
+}
+@media (max-width: 700px) {
+  .fotos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .fotos img {
+    width: 90%;
+    height: auto;
+  }
+
+  .corte {
+    width: 90%;
+  }
+}
+@media (max-width: 600px) {
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
+@media (max-width: 600px) {
+  header h1,
+  .banner h2,
+  .galeria h2,
+  .servicos-destaque h2 {
+    font-size: 1.5rem;
+  }
+
+  main {
+    padding: 20px 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+
+  thead tr {
+    display: none; /* esconde o cabeçalho na versão mobile */
+  }
+
+  tbody tr {
+    margin-bottom: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #a38b73; /* mesma cor do fundo da tabela */
+  }
+
+  tbody td {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 10px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    font-size: 1rem;
+    color: #fff; /* texto branco para contraste */
+  }
+
+  tbody td:last-child {
+    border-bottom: none;
+  }
+
+  tbody td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    color: #fff;
+  }
+}
+
+@media (max-width: 500px) {
+  .form-linha {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .form-linha .form-group {
+    width: 100%;
+  }
+
+  .form-group input[type="email"],
+  .form-group input[type="password"] {
+    width: 100%;
+    max-width: 100%;
+    font-size: 1rem;
+    padding: 12px;
+    box-sizing: border-box;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  .form-group input::placeholder {
+    font-size: 0.95rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+@media (max-width: 500px) {
+  .form-group input[type="email"],
+  .form-group input[type="password"] {
+    width: 100%;
+    font-size: 1rem;
+    padding: 12px;
+    min-width: 250px;
+  }
+
+  .form-group input::placeholder {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+
+
